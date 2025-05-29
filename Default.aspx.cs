@@ -210,11 +210,11 @@ public partial class Print : System.Web.UI.Page
             case ".pdf":
                 //pdf
                 // https://www.sumatrapdfreader.org/docs/Command-line-arguments.html
-                //cmd = Server.MapPath("~/bin/") + "SumatraPDF.exe";
-                //param = string.Format("-print-to-default -silent -print-settings \"{0}x,{1}\"  \"{2}\"", copies, range, path);
+                cmd = Server.MapPath("~/bin/") + "SumatraPDF.exe";
+                param = string.Format("-print-to-default -silent -print-settings \"{0}x,{1}\"  \"{2}\"", 1, range, path);
                 //copies = 1;
-                cmd = @"C:\Program Files\LibreOffice\program\soffice.exe";
-                param = string.Format("-headless -p \"{0}\"", path);
+                //cmd = @"C:\Program Files\LibreOffice\program\soffice.exe";
+                //param = string.Format("-headless -p \"{0}\"", path);
                 break;
 
             case ".doc":
